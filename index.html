@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css"
+        crossorigin="anonymous" />
+    <style>
+        .topbar-logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .geng-summary {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        .geng-index {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        .geng-info-btn {
+            color: #2B97E6;
+        }
+
+        .mdui-overlay-show {
+            backdrop-filter: blur(15px);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梗百科</title>
+</head>
+
+<body class="mdui-theme-layout-dark">
+    <div class="mdui-appbar">
+        <div class="mdui-container">
+            <div style="font-size: 0;padding-top:15px;">
+                <button class="mdui-btn topbar-logo" onclick="window.location.href = '/'">梗百科</button>
+                <a href="/?id=1" class="mdui-text-color-theme-text"><button class="mdui-btn">发现</button></a>
+                <a href="/?id=1" class="mdui-text-color-theme-text"><button class="mdui-btn">提交</button></a>
+                <a href="/?id=1" class="mdui-text-color-theme-text"><button class="mdui-btn">管理员</button></a>
+                <a href="/about.html" class="mdui-text-color-theme-text"><button class="mdui-btn"
+                        style="float:right;">关于</button></a>
+                <button class="mdui-btn mdui-btn-icon mdui-ripple" style="float:right;" onclick="changeTheme()"><i
+                        class="mdui-icon material-icons">color_lens</i></button>
+            </div>
+            <br>
+        </div>
+    </div>
+    <div class="geng-summary">
+        <h2>介绍</h2>
+        <p>奇怪の梗</br>增加啦！</p>
+    </div>
+    <div class="geng-index" id="geng-index"></div>
+    <div class="mdui-dialog" id="geng-info"></div>
+    <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js" crossorigin="anonymous"></script>
+    <script src='https://cdn.jsdelivr.net/npm/marked/marked.min.js'></script>
+    <script src="geng.js"></script>
+</body>
+
+</html>
